@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mohamed Bayees M — DevOps, Cloud &amp; SRE Engineer</title>
+<meta name="description" content="DevOps, Cloud and SRE engineer with 3 years of experience on GCP and AWS: Kubernetes, Terraform, GitOps, observability and DevSecOps. Based in Bangalore.">
+<meta property="og:title" content="Mohamed Bayees M — DevOps, Cloud &amp; SRE Engineer">
+<meta property="og:description" content="100+ Kubernetes clusters, AWS to GCP migrations, Terraform modules and observability. Based in Bangalore.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#0a0e14">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  --bg:#f5f7fa;--surface:#ffffff;--text:#14181f;--muted:#566070;--line:#d9dee6;--accent:#0b63c5;--accent-soft:#e3eefb;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0e14;--surface:#111722;--text:#e6e9ef;--muted:#9aa5b6;--line:#212a38;--accent:#7cc4ff;--accent-soft:#132338;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0e14;--surface:#111722;--text:#e6e9ef;--muted:#9aa5b6;--line:#212a38;--accent:#7cc4ff;--accent-soft:#132338;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--text);font-family:"Manrope",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.65;font-size:1rem}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:860px;margin:0 auto;padding:0 1.5rem}
+header.top{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0}
+nav a{color:var(--muted);margin-left:1.25rem;font-size:.95rem}
+nav a:hover{color:var(--text);text-decoration:none}
+.theme{background:none;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:.3rem .8rem;font:inherit;font-size:.85rem;cursor:pointer;margin-left:1.25rem}
+.hero{padding:4rem 0 3rem}
+.hero .where{color:var(--muted);margin:0 0 1rem}
+h1{font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.02;letter-spacing:-.035em;font-weight:800;margin:0 0 1rem}
+.role{font-size:1.25rem;font-weight:500;margin:0 0 1.25rem}
+.summary{max-width:62ch;color:var(--muted);margin:0 0 1.75rem}
+.links{display:flex;flex-wrap:wrap;gap:.75rem}
+.btn{display:inline-block;padding:.6rem 1.1rem;border-radius:8px;border:1px solid var(--line);color:var(--text);font-weight:700;font-size:.95rem;background:var(--surface)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--bg)}
+.btn:hover{text-decoration:none;border-color:var(--accent)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:1rem 0 0}
+.stat{padding:1.4rem 1rem 1.4rem 0}
+.stat b{display:block;font-size:2.4rem;line-height:1;letter-spacing:-.03em;font-weight:800;color:var(--accent)}
+.stat span{display:block;margin-top:.5rem;color:var(--muted);font-size:.9rem}
+section{padding:3.5rem 0 0}
+h2{font-size:1.75rem;letter-spacing:-.02em;margin:0 0 1.75rem}
+.timeline{position:relative;margin:0;padding:0 0 0 1.75rem;list-style:none;border-left:2px solid var(--line)}
+.job{position:relative;padding-bottom:2.5rem}
+.job::before{content:"";position:absolute;left:calc(-1.75rem - 7px);top:.5rem;width:12px;height:12px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px var(--bg)}
+.job h3{margin:0;font-size:1.2rem}
+.job .meta{color:var(--muted);font-size:.92rem;margin:.15rem 0 .9rem}
+.job ul{margin:0;padding-left:1.1rem}
+.job li{margin-bottom:.55rem;max-width:68ch}
+.job li b{font-weight:700}
+.skills{display:grid;gap:1.1rem}
+.skill{display:grid;grid-template-columns:190px 1fr;gap:.25rem 1.5rem;padding-top:1.1rem;border-top:1px solid var(--line)}
+.skill h3{margin:0;font-size:1rem}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem}
+.chips span{background:var(--accent-soft);color:var(--text);border-radius:6px;padding:.15rem .6rem;font-size:.9rem}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2.5rem}
+.plain{list-style:none;margin:0;padding:0}
+.plain li{padding:.65rem 0;border-top:1px solid var(--line)}
+.plain small{display:block;color:var(--muted)}
+footer{margin-top:5rem;padding:2rem 0 3rem;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+@media (max-width:640px){
+  .skill{grid-template-columns:1fr}
+  nav a:not(.keep){display:none}
+  .hero{padding-top:2.5rem}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <strong>Mohamed Bayees M</strong>
+    <nav>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#certifications">Certifications</a>
+      <a class="keep" href="#contact">Contact</a>
+      <button class="theme" id="theme" type="button" aria-label="Switch colour theme">Theme</button>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <p class="where">Bangalore, India</p>
+      <h1>Mohamed Bayees M</h1>
+      <p class="role">DevOps, Cloud Infrastructure and SRE engineer</p>
+      <p class="summary">I build and run reliable, secure multi-cloud platforms on GCP and AWS. Today I help run 100+ Kubernetes clusters at Alteryx, working with engineering teams across the US and Europe. I work with Terraform, GitOps, CI/CD, observability and DevSecOps.</p>
+      <div class="links">
+        <a class="btn primary" href="mailto:mohamedbayees.m@gmail.com">Email me</a>
+        <a class="btn" href="https://linkedin.com/in/mohamed-bayees-m">LinkedIn</a>
+      </div>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>100+</b><span>Kubernetes clusters managed on GCP and AWS</span></div>
+      <div class="stat"><b>70%</b><span>faster environment setup with Terraform modules</span></div>
+      <div class="stat"><b>~30%</b><span>cloud cost cut by moving AWS workloads to GCP</span></div>
+      <div class="stat"><b>99.9%</b><span>uptime moving RDS databases to Cloud SQL</span></div>
+    </div>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <h3>Cloud Infrastructure Engineer, Alteryx</h3>
+          <p class="meta">Jun 2026 – Present · Bengaluru</p>
+          <ul>
+            <li><b>Multi-cloud Kubernetes.</b> Manage 100+ clusters across GCP and AWS with ArgoCD GitOps delivery.</li>
+            <li><b>Observability and incidents.</b> Set up Datadog with OpenTelemetry for metrics and tracing. On call via PagerDuty, leading root cause analysis so problems don’t recur.</li>
+            <li><b>DevSecOps.</b> Added terraform fmt, validate, linting, Trivy and Checkov to CI pipelines to catch misconfigurations before deployment.</li>
+            <li><b>Secure access.</b> Rolled out Teleport for audited access to clusters and internal systems. Set up Workload Identity Federation with GitLab OIDC for keyless pipeline access to GCP.</li>
+            <li><b>Ingress and DNS.</b> Deployed NGINX ingress with ExternalDNS and Cloudflare to automate DNS records.</li>
+            <li><b>Databases.</b> Migrated databases to GCP with Database Migration Service and minimal downtime.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <h3>Senior Cloud Engineer, CloudSide Technologies (now part of Searce)</h3>
+          <p class="meta">Nov 2023 – May 2026 · Bengaluru</p>
+          <ul>
+            <li><b>Infrastructure as code.</b> Built reusable Terraform modules for multi-environment provisioning on AWS and GCP, cutting setup time by 70%. Supported Carsome, Lendingkart, Dyson and Achnet.</li>
+            <li><b>Migration and cost.</b> Moved VMs and production databases from AWS to GCP (RDS to Cloud SQL, 99.9% uptime) and multi-TB data from S3 with zero downtime, cutting storage and network costs by about 30%.</li>
+            <li><b>Kubernetes and GitOps.</b> Moved workloads from Helm on EKS to ArgoCD and Kustomize on GKE for more reliable deployments and tighter change control.</li>
+            <li><b>CI/CD.</b> Built Jenkins and GitLab CI pipelines for build, test and deploy, and reduced container image size by 60%.</li>
+            <li><b>Observability.</b> Implemented the Grafana stack (Loki, Mimir, Tempo) with OpenTelemetry across microservices, and ran root cause analysis to improve recovery time.</li>
+            <li><b>Security and networking.</b> Integrated HashiCorp Vault, automated GCP service account key rotation with Cloud Functions, and joined GCP to a vendor network over VPN using DNAT/SNAT to resolve overlapping IP ranges.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill"><h3>Cloud</h3><div class="chips"><span>GCP: GKE, Cloud SQL, Cloud Functions, Cloud Storage, IAP, DMS</span><span>AWS: EKS, RDS, S3, CloudFront, IAM</span><span>Azure: Blob Storage</span></div></div>
+        <div class="skill"><h3>Containers and GitOps</h3><div class="chips"><span>Kubernetes</span><span>Docker</span><span>Helm</span><span>Kustomize</span><span>ArgoCD</span></div></div>
+        <div class="skill"><h3>Infrastructure as code</h3><div class="chips"><span>Terraform (modular, multi-environment)</span></div></div>
+        <div class="skill"><h3>CI/CD</h3><div class="chips"><span>GitLab CI</span><span>Jenkins</span><span>Git</span><span>GitHub</span></div></div>
+        <div class="skill"><h3>Observability</h3><div class="chips"><span>Datadog</span><span>OpenTelemetry</span><span>Prometheus</span><span>Grafana (Loki, Mimir, Tempo)</span><span>EFK</span><span>Fluentd</span></div></div>
+        <div class="skill"><h3>Security</h3><div class="chips"><span>Checkov</span><span>Trivy</span><span>Teleport</span><span>HashiCorp Vault</span><span>Workload Identity Federation</span><span>GitLab OIDC</span></div></div>
+        <div class="skill"><h3>Networking</h3><div class="chips"><span>VPC</span><span>VPN</span><span>DNS</span><span>DHCP</span><span>DNAT/SNAT</span><span>CDN</span><span>Cloudflare</span><span>NGINX Ingress</span><span>ExternalDNS</span></div></div>
+        <div class="skill"><h3>Scripting and data</h3><div class="chips"><span>Python</span><span>Shell</span><span>SQL</span><span>Cloud SQL</span><span>AWS RDS</span></div></div>
+        <div class="skill"><h3>Systems and tools</h3><div class="chips"><span>Linux</span><span>Windows Server</span><span>Jira</span><span>ServiceNow</span></div></div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="two">
+        <div>
+          <h2>Certifications</h2>
+          <ul class="plain">
+            <li><a href="https://www.credly.com/badges/69f0b5ff-f47d-491e-a867-0ab469d7bbcf/public_url" target="_blank" rel="noopener">Professional Cloud Architect</a><small>Google Cloud · Verify on Credly</small></li>
+            <li><a href="https://www.credly.com/badges/de75880b-1dfa-461a-a9e0-6a21578ac7fb/public_url" target="_blank" rel="noopener">Associate Cloud Engineer</a><small>Google Cloud · Verify on Credly</small></li>
+            <li><a href="https://www.credly.com/badges/f7be903b-76bc-4010-9ddc-450e50287b4c/public_url" target="_blank" rel="noopener">Cloud Digital Leader</a><small>Google Cloud · Verify on Credly</small></li>
+            <li><a href="https://verify.skilljar.com/c/givouxep6rja" target="_blank" rel="noopener">Introduction to FOCUS</a><small>FinOps Foundation · Verify certificate</small></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Education</h2>
+          <ul class="plain">
+            <li>B.E. Electrical and Electronics Engineering<small>Dhaanish Ahmed College of Engineering, Anna University · 2019 – 2023</small></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>Open to DevOps, SRE and platform engineering roles. Write to <a href="mailto:mohamedbayees.m@gmail.com">mohamedbayees.m@gmail.com</a> or find me on <a href="https://linkedin.com/in/mohamed-bayees-m">LinkedIn</a>.</p>
+    <p>© 2026 Mohamed Bayees M</p>
+  </footer>
+</div>
+<script>
+(function(){
+  var btn=document.getElementById('theme'),root=document.documentElement;
+  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s);}catch(e){}
+  btn.addEventListener('click',function(){
+    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
+    var next=dark?'light':'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
